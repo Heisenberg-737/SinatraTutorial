@@ -12,3 +12,8 @@ require 'sinatra'
 #     content_type :json
 #     return { :cheese => params['cheese'], :query => params['query']}.to_json
 # end
+
+# Serve from a template
+get '/' do
+    erb :index
+end
